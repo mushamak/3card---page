@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+    margin: 0;
+}
+body {
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+svg {
+    padding-right: 8.5rem;
+    padding-bottom: 2rem;
+}
+
+main {
+    display: flex;
+    border-radius: 10px;
+    width: 850px;
+    height: 500px;
+    overflow: hidden;
+}
+.card1 {
+    width: 220px;
+    padding: 2.5rem;
+    background-color: hsl(31, 77%, 52%);
+}
+h1 {
+    font-family: "Big Shoulders Display", cursive;
+    color: hsl(0, 0%, 95%);
+    text-align: start;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+p {
+    font-family: "Lexend Deca", sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    text-align: start;
+    font-size: 15px;
+    line-height: 1.5rem;
+    padding: 2px;
+}
+.card2 {
+    width: 220px;
+    padding: 2.5rem;
+    background-color: hsl(184, 100%, 22%);
+}
+.card2 button {
+    color: hsl(184, 100%, 22%);
+}
+
+.card3 {
+    width: 220px;
+    padding: 2.5rem;
+    background-color: hsl(179, 100%, 13%);
+}
+.card3 button {
+    color: hsl(179, 100%, 13%);
+}
+button {
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    border-radius: 35px;
+    outline: none;
+    font-family: "Lexend Deca", sans-serif;
+    color: hsl(31, 77%, 52%);
+    background-color: hsl(0, 0%, 95%);
+    border-color: hsla(0, 0%, 100%, 0.75);
+    padding: 3px;
+    width: 65%;
+    height: 12%;
+    cursor: pointer;
+    position: relative;
+    top: 20%;
+    right: 17%;
+}
+button:active {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+@media screen and (max-width: 375px) {
+    main {
+        justify-content: center;
+        display: grid;
+        place-content: center;
+        width: 330px;
+        height: 95%;
+        text-align: start;
+        padding: 1rem;
+    }
+    .card1 {
+        width: 320px;
+        height: 400px;
+    }
+    .card2 {
+        width: 320px;
+        height: 400px;
+    }
+    .card3 {
+        width: 320px;
+        height: 400px;
+    }
+    h1 {
+        padding-left: 18px;
+    }
+    p {
+        padding: 18px 25px 0px 18px;
+        font-size: 20px;
+        line-height: 2rem;
+    }
+    button {
+        position: relative;
+        left: 18px;
+        top: 2rem;
+        width: 50%;
+        height: 13%;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: relative;
+    top: 12px;
+}
+.attribution a {
+    color: hsl(179, 100%, 13%);
+}
