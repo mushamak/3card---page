@@ -11,12 +11,12 @@ body {
     min-height: 100vh;
 }
 svg {
-    padding-right: 8.5rem;
-    padding-bottom: 2rem;
+  margin: 0 8rem 0 0;
 }
 
 main {
     display: flex;
+    /* flex-direction: column; */
     border-radius: 10px;
     width: 850px;
     height: 500px;
@@ -80,11 +80,13 @@ button {
 button:active {
     background-color: transparent;
     color: hsl(0, 0%, 95%);
+    outline: none;
 }
 @media screen and (max-width: 375px) {
     main {
         justify-content: center;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         place-content: center;
         width: 330px;
         height: 95%;
